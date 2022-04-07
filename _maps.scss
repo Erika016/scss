@@ -1,0 +1,23 @@
+// Declaring a map
+$font-weights: (
+"regular": 400,
+"medium": 500,
+"bold": 700,
+);
+$font-sizes: (
+"initial": 0.785rem,
+"medium": 1.1rem,
+"large": 1.8rem,
+"x-large": 2.5rem,
+);
+$paddings: (
+    "small": 0.785em,
+    "medium": 1em,
+    "big": 2em,
+);
+// Adding breakpoints
+$breakpoints: (
+"phone": 640px,
+"tablet": 768px,
+"desktop": 1024px,
+);
