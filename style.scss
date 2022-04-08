@@ -139,10 +139,10 @@ table {
     text-transform: capitalize;
   }
   & th:first-child {
-    border-top-left-radius: 3rem;
+    border-top-left-radius: 0.3rem;
   }
   & th:last-child {
-    border-top-right-radius: 3rem;
+    border-top-right-radius: 0.3rem;
   }
   & td {
     font-family: fFamily(fredoka);
@@ -167,8 +167,31 @@ table {
   }
   & td:nth-child(3) .fa-2x{
     color: $red;
-    &:hover{
-      color: $dark-red;
+  }
+  & td:nth-child(3) .fa-2x:hover{
+    color: $dark-red;
+  }
+  & .fa-circle-check {
+    color: $green;
+    margin-left: 15px;
+    transition: all 0.3s ease-in-out;
+    & :hover{
+      color: $teal;
+      transform: scale(1.2);
     }
   }
 }
+.dismissible{
+  opacity: 0!important;
+  height: 0 !important;
+  padding: 0 !important;
+  transition: all 0.3s linear;
+}
+.editable{
+  background-color: #fff;
+  display: inline-block;
+  padding: .3em;
+  border-radius: 3rem;
+  margin-top: 3em;
+}
+
