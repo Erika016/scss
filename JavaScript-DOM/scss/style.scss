@@ -185,13 +185,13 @@ table {
   opacity: 0!important;
   height: 0 !important;
   padding: 0 !important;
+  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 .editable{
   background-color: #fff;
   display: inline-block;
   padding: .3em;
-  border-radius: 3rem;
-  margin-top: 3em;
+  border-radius: .3rem;
+  margin-top: .3em;
 }
-
