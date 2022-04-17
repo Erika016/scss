@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--Required meta tags-->
+        <meta charset="utf-8">
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link
+        rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <!--link fontaswesom-->
+        <script src="https://kit.fontawesome.com/5d77c899ef.js" crossorigin="anonymous"></script>
+        <!--link custom CSS-->
+        <link rel="stylesheet" href="css/style.css">
+        <title>Hello, world!</title>
+    </head>
+    <body>
+        <!--nav-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-1 fw-bold text-warning" href="#">A BoardGames Friki</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold fs-5 text-warning border-bottom  border-3 border-dark" aria-current="page" href="#">Juegos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white fw-bold fs-5" aria-current="page" href="#">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white fw-bold fs-5" aria-current="page" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Find your course" aria-label="Search">
+                        <button class="btn btn-outline-success border border-warning text-warning" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="p-5 mb-4 bg-light rounded-3 float-left">
+            <div class="container-fluid py-5">
+                <div class="offset-2">
+                    <h1 class="display-1 fw-bold">Hello BoardGames lovers!</h1>
+                    <p class="col-md-8 fs-4 lh-lg">En la actualidad. Móviles, tabletas, ordenadores... han creado un ecosistema social donde la convivencia e interacciones se hacen a través de una pantalla. Los juegos de mesa nos dan la oportunidad de compartir un momento lúdico, único y libre de terminales</p>
+                    <!--button modal-->
+                    <button type="button" class="btn btn-primary bg-warning text-black border-0 p-3 fs-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Más sobre mí
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--MODAL ligado al botón "Más sobre mí"-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Sobre mí</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Mi nombre es Diego y comencé mi andadura profesional como fisioterapeuta. Aunque tuve que cambiar mis perspectivas profesionales ¿Por qué? pues porque trataba
+                                                                                                                    sobre todo a pacientes con Alzheimer en un estado muy avanzado o terminales. Se me daba genial, pero no podía dejar de implicarme con sus familias para darles
+                                                                                                                    consuelo... desgraciadamente eso me costó la salud. Fue una experienca que aunaba los más hermoso del amor humano y el más terrible de los sufrimientos.
+                                                                                                                    En lo que a hobbies se refiere... Me encanta leer, sobre todo novela histórica, de ciencia ficción o fantástica. Me gusta mucho hacer deporte, juego fútbol y volleyball
+                                                                                                                    me encantan los juegos de gestión y estrategia de PC como CIVILIZATION, Humankind, Europa Universalis o Crusaders Kings. Pero sobre todo lo que más me gusta son
+                                                                                                                    los juegos de mesa, la lista es interminable... Through the ages, Marvel Champions, Clash of Cultures, Agrícola,  7Wonders, Dead of Winter... y muchísimos más
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--cards-->
+        <div class="mx-auto col-7 row text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3 bg-dark text-white">
+                        <h4 class="my-0 fw-normal fs-3">Begginer</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">€0<small class="text-muted fw-light">/mo</small>
+                        </h1>
+                        <div class="d-flex flex-column text-start fst-italic fw-bold">
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>
+                                    <i class="bi bi-check2-square me-2"></i>
+                                    Reglamentos
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2-square me-2"></i>
+                                    Explicación pormenorizada
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2-square me-2"></i>
+                                    partidas con otros jugadores
+                                </li>
+                                <li>
+                                    <i class="bi bi-app me-2"></i>
+                                    Resolución dudas de los reglamentos
+                                </li>
+                                <li>
+                                    <i class="bi bi-app me-2"></i>
+                                    Unboxing nuevos juegos
+                                </li>
+                                <li>
+                                    <i class="bi bi-app me-2"></i>
+                                    Entradas para torneos y ferias
+                                </li>
+                                <li>
+                                    <i class="bi bi-app me-2"></i>
+                                    Viaje, todo incluido a la feria anual de Essen
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary bg-white text-warning border-1 border border-warning fs-4">boardgamer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3 bg-dark text-white">
+                        <h4 class="my-0 fw-normal fs-3">Pro</h4>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-start">
+                        <h1 class="card-title pricing-card-title">€190<small class="text-muted fw-light">/mes</small>
+                        </h1>
+                        <div class="d-flex flex-column text-start fst-italic fw-bold">
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>
+                                    <i class="bi bi-check2-square me-2"></i>
+                                    Reglamentos
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2-square me-2"></i>
+                                    Explicación pormenorizada
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2-square me-2"></i>
+                                    partidas con otros jugadores
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2-square me-2"></i>
+                                    Resolución dudas de los reglamentos
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2-square me-2"></i>
+                                    Unboxing nuevos juegos
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2-square me-2"></i>
+                                    Entradas para torneos y ferias
+                                </li>
+                                <li>
+                                    <i class="bi bi-app me-2"></i>
+                                    Viaje, todo incluido a la feria anual de Essen
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="w-100 btn btn-lg btn-primary bg-warning text-dark border-0 fs-4">Friki</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3 text-white bg-primary border-primary bg-dark text-white">
+                        <h4 class="my-0 fw-normal fs-3">Master</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">€240<small class="text-muted fw-light">/mo</small>
+                        </h1>
+                        <div class="d-flex flex-column text-start fst-italic fw-bold">
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>
+                                    <i class="bi bi-check2-square me-2"></i>
+                                    Reglamentos
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2-square me-2"></i>
+                                    Explicación pormenorizada
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2-square me-2"></i>
+                                    partidas con otros jugadores
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2-square me-2"></i>
+                                    Resolución dudas de los reglamentos
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2-square me-2"></i>
+                                    Unboxing nuevos juegos
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2-square me-2"></i>
+                                    Entradas para torneos y ferias
+                                </li>
+                                <li>
+                                    <i class="bi bi-check2-square me-2"></i>
+                                    Viaje, todo incluido a la feria anual de Essen
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="w-100 btn btn-lg btn-primary bg-warning text-dark border-0 fs-4">Master of the universe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--text between cards and bar progress-->
+        <div class="d-flex flex-column">
+            <h3 class="text-center fw-bold">
+                Sobre Nosotros
+            </h3>
+            <p class="text-start ms-5">
+                Encuentra jugadores con los mismos gustos que tú. Además te guiaremos en las partidas y sólo tendrás que preocuparte por divertirte y compartir un rato genial con amigos.
+            </p>
+        </div>
+        <!--icons with personal adress-->
+        <div class="d-flex flex-row ms-5 align-items-top">
+            <div class="card" style="width: 18rem;">
+                <img src="img/diego foto.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center bg-dark text-white">
+                    <h5 class="card-title fs-3 mb-4">Diego Tapia</h5>
+                    <p class="card-text">lector consumado, me encanta hacer deporte, adoro los títulos de estrategia de pc.. pero sobre todo adicto a los juegos de mesa</p>
+                </div>
+            </div>
+            <div class=" col-7 d-flex flex-column offset-2">
+                <div class="width-100 d-flex bg-secondary text-warning p-5 rounded-3">
+                    <div class="col-8">
+                        <ul class="list-unstyled ms-3">
+                            <li>
+                                <i class="bi bi-envelope-fill text-black"></i>
+                                <small class="ms-2">diego_tapia_millan@yahoo.es</small>
+                            </li>
+                            <li>
+                                <i class="bi bi-telephone-fill text-black"></i>
+                                <small class="ms-2">677091750</small>
+                            </li>
+                            <li>
+                                <i class="bi bi-globe text-black"></i>
+                                <small class="ms-2">My House, My BoardGames</small>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <ul class="list-unstyled ms-3">
+                            <li>
+                                <i class="bi bi-chat-square-dots-fill text-black"></i>
+                                <small class="ms-2">Diego Tapia Millán</small>
+                            </li>
+                            <li>
+                                <i class="bi bi-github text-black"></i>
+                                <small class="ms-2">DiegoTMillan</small>
+                            </li>
+                            <li>
+                                <i class="bi bi-twitter text-black"></i>
+                                <small class="ms-2">in process...</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--rocket icon and bar progress-->
+                <div class="d-flex flex-row mt-4">
+                    <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle py-4 px-4">
+                        <i class="fa-solid fa-rocket fs-1"></i>
+                    </div>
+                    <div class="col-8 mt-3 ms-4">
+                        <p class="">
+                            <h3 class="fw-bold">Hard Skills</h3>
+                        </p>
+                    </div>
+                </div>
+                <!--some problems with bar progress, i can't put them in the same line-->
+                <div class="d-flex flex-column mt-4">
+                    <div class="">
+                        <p class="fs-4 fw-bold">
+                            Explaining Rules
+                        </p>
+                        <div class="progress">
+                            <div class="progress-bar  progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class=>
+                        <p class="fs-4 fw-bold mt-3">
+                            Rol Master
+                        </p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class=>
+                        <p class="fs-4 fw-bold mt-3">
+                            Strategy Advices
+                        </p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 65%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Soft Skills, list aside and some text-->
+        <div class="d-flex flex-row mt-5 ms-4">
+            <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle py-4 px-4">
+                <i class="fa-regular fa-lightbulb fs-1"></i>
+            </div>
+            <div class=" mt-2 ms-4">
+                <p class="">
+                    <h3 class="fw-bold">Soft Skills</h3>
+                </p>
+            </div>
+        </div>
+        <div class="d-flex flex-row">
+            <div class="list-group col-4 mt-4 ms-4">
+                <label class="list-group-item d-flex align-items-center bg-dark text-white">
+                    <p class="mt-3">Creatividad</p>
+                </label>
+                <label class="list-group-item d-flex align-items-center bg-secondary">
+                    <p class="mt-3">Persuasión</p>
+                </label>
+                <label class="list-group-item d-flex align-items-center bg-secondary">
+                    <p class="mt-3">Colaboración</p>
+                </label>
+                <label class="list-group-item d-flex align-items-center bg-secondary">
+                    <p class="mt-3">adaptabilidad</p>
+                </label>
+                <label class="list-group-item d-flex align-items-center bg-secondary">
+                    <p class="mt-3">Inteligencia emocional</p>
+                </label>
+            </div>
+            <!--text and quote-->
+            <div class="mt-4 ms-3">
+                <p class="mb-5">
+                    Me encantan todo lo relacionado con la biología, la astronomía o la física. No soy ducho en la materia pero me encanta seguir a los mejores divulgadores.
+                                                                                    Os dejo una curiosidad que cuando la vi, me dejó ojiplático.
+                </p>
+                <div class="py-3 me-4 border-top border-bottom border-start-0 border-end-0 border border-3 border border-light">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa-solid fa-quote-left fs-1 fa-stack-1x fa-inverse" style="--fa-stack-z-index: 2;"></i>
+                        <i class="fa-solid fa-square fa-stack-2x" style="--fa-stack-z-index: 1;"></i>
+                    </span>
+                    <p class=" fw-bold fst-italic">
+                        "¿Por qué se ha puesto de moda que las parejas se tatuen la ecuación de Dirac? Ni más ni menos explica el entrelazamiento cuántico. Dicho de otro
+                                                                                                modo, cuando dos partículas interactúan el tiempo suficiente, aunque luego las separen galaxias estarán de algún modo conectadas. Cuando una determine su estado,
+                                                                                                la otra lo hará también. Desde luego es por eso que se la considera la ecuación más romántica de la física"
+                    </p>
+                    <p class="fst-italic text-end text-warning">
+                        -   (i∂ + m) ψ = 0
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--Career profiles, experiences-->
+        <div class="d-flex flex-row justify-content-between">
+            <div class="d-flex flex-column mt-5 ms-4 col-3">
+                <div class="d-flex flex-row">
+                    <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle py-3 px-3">
+                        <i class="fa-solid fa-user fs-3"></i>
+                    </div>
+                    <div class="ms-4">
+                        <p class="">
+                            <h3 class="fs-3 fw-bold">Career Profile</h3>
+                        </p>
+                    </div>
+                </div>
+                <div class=" mt-4">
+                    <p>
+                        Mi experiencia como fisioterapeuta además de preparar oposiciones de justicia. Me han dado una serie de habilidades
+                                                                                                        ideales para colmar las expectativas de los jugadores más exigentes.
+                        <br><br>
+                        No me cuesta nada en absoluto enfrentarme a los más enrevesados reglamentos ademaś de saber transmitirlo a los 
+                                                                                                        nuevos jugadadores con paciencia y facilitando su comprensión.
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex flex-column mt-5 col-3">
+                <div class="d-flex flex-row">
+                    <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle py-3 px-3">
+                        <i class="fa-solid fa-briefcase fs-3"></i>
+                    </div>
+                    <div class="ms-4">
+                        <p class="">
+                            <h3 class="fs-3 fw-bold">Experiences</h3>
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h5 class="fs-4">Fisioterapeuta</h4>
+                    <p>
+                        4body, San Pedro de Alcántara
+                        <br>
+                        <span class="text-warning">
+                            2007-2016
+                        </span>
+                        <br>
+                    </p>
+                    <p class="text-black-50">
+                        Diagnóstico, determinación del tratamiento y gestión de los pacientes. Con un enfoque personalizado a las 
+                                                                                                        necesidades de los pacientes.
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex flex-column mt-5 col-3">
+                <div class=" mt-5 pt-4">
+                    <h5 class="fs-4">Web Developer</h4>
+                    <p>
+                        CODE SPACE
+                        <br>
+                        <span class="text-warning">
+                            2022 -
+                        </span>
+                        <br>
+                    </p>
+                    <p class="text-black-50">
+                        En proceso de formación Full Stack. Máxima motivación y esfuerzo.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--Login & Faq-->
+        <div class="mx-auto col-11 row justify-content-center mt-5">
+            <!--login-->
+            <div class="login col-4 d-flex flex-column border border border-1">
+                <form action=""></form>
+                <div class="col-12 justify-content-around row g-3">
+                    <h5 class="fs-2 p-3 mt-4 text-center">Say Hello!</h5>
+                    <div class="mt-3 col-11">
+                        <label for="username" class="form-label">Your Name</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text bg-dark">
+                                <i class="fa-solid fa-user text-warning"></i>
+                            </span>
+                            <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                            <div class="invalid-feedback">
+                                Your username is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-11 mt-3">
+                        <label for="username" class="form-label">Email</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text bg-dark">
+                                <i class="fa-solid fa-envelope text-warning"></i>
+                            </span>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required="">
+                        </div>
+                        <div id="emailHelp" class="form-text text-secondary">We'll never share your email with anyone else.
+                        </div>
+                    </div>
+                    <div class="mt-3 col-11">
+                        <label for="username" class="form-label">Needed services</label>
+                        <div class="input-group has-validation">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Choose Services</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mt-3 col-11">
+                        <label for="username" class="form-label">Budget</label>
+                        <div class="input-group has-validation">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select budget</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mt-3 col-11">
+                        <label for="username" class="form-label">Message</label>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Your message here..." id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Your message here...</label>
+                        </div>
+                    </div>
+                    <div class="mt-3 col-11">
+                        <button type="button" class="btn btn-warning col-12 fs-4">Submit<span>
+                                <i class="fa-solid fa-paper-plane ms-2"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Acordion-->
+            <div class="login ms-5 col-3 d-flex flex-column border border border-1">
+                <h5 class="fs-2 p-3 mt-2 text-center">Frequently Asked Questions</h5>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button text-light p-4 fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Do i need certification?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong>
+                                It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed text-light p-4 fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How long could be my formation?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong>
+                                It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed text-light p-4 fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Where do I start
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong>
+                                It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="col-12 p-3 mt-3 d-flex flex-column bg-dark">
+            <div class="d-flex flex-row justify-content-center align-items-baseline">
+                <span class="fs-5 text-secondary fw-bold">
+                    2022
+                </span>
+                <span>
+                    <i class="fa-regular fa-closed-captioning ms-2 text-primary fs-3"></i>
+                </span>
+                <span class="fs-5 text-secondary fw-bold ms-2">
+                    Developed by
+                </span>
+                <span class="fs-1 text-warning fw-bold ms-2 ">
+                    Diego Tapia
+                </span>
+                <span class="fs-5 text-secondary fw-bold ms-2">
+                    Based on Antonio Cebrián design
+                </span>
+                <span>
+                    <span class="fa-stack fa-2x fs-4 animation-target2">
+                        <i class="fa-brands fa-linkedin-in fa-stack-1x fa-inverse text-dark" style="--fa-stack-z-index: 2;"></i>
+                        <i class="square-link fa-solid fa-square fa-stack-2x text-primary" style="--fa-stack-z-index: 1;"></i>
+                      </span>
+                </span>
+                <span>
+                    <i class="fa-brands fa-whatsapp ms-2 text-success fs-1"></i>
+                </span>
+            </div>
+            <div class="text-center mt-3">
+                <i class="fa-regular fa-closed-captioning ms-2 text-primary fs-2 animation-target"></i>
+            </div>
+            <div class="text-center mt-3">
+                <p class="text-muted fs-7">
+                    Esta obra está bajo una
+                </p>
+            </div>
+            <div class="text-center">
+                <p class="text-primary fs-5">
+                    Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional
+                </p>
+            </div>
+        </footer>
+        <!--bootstrap js-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    </body>
+</html>
