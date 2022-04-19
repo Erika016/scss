@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "ds-digit";
+  src: url("../fonts/DS-DIGI.TTF");
+}
+/* reset de los stylos por defecto del navegador */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+/* seudo selector del elemento html */
+:root {
+  font-size: 0.785rem;
+  font-family: "Rubik", sans-serif;
+  --blue: #0d6efd;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #d63384;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #198754;
+  --teal: #20c997;
+  --cyan: #0dcaf0;
+  --gray-500: #adb5bd;
+  --black: #000;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--black);
+  background-image: url("../img/stadium-bg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  /* padding: 4em 2em; */
+  color: white;
+  font-family: "Fredoka", sans-serif;
+}
+/* .logo {
+  width: 60%;
+  height: 5vh;
+  margin: 5% auto;
+} */
+img.logo {
+  max-width: 200px;
+  height: auto;
+  margin-top: 3em;
+}
+
+.scoreboard {
+  width: 45%;
+  /* height: 15vh; */
+  margin: -15px auto 0;
+  position: relative;
+  z-index: 100;
+  /* max-height: 400px; */
+  background-image: url("../img/scoreboard-bg.png");
+  background-position: center center;
+  background-size: 100% 100%;
+  padding: 2em;
+  font-weight: bold;
+}
+.row.top {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-size: 1.2rem;
+}
+.row.top span:first-child,
+.row.top span:last-child {
+  margin-bottom: 10px;
+}
+.row.top span {
+  width: 33.3%;
+  text-align: center;
+  margin-bottom: 0.1em;
+}
+.row.top img {
+  max-width: 70%;
+}
+.row.bottom {
+  display: flex;
+  justify-content: space-around;
+}
+.row.bottom div {
+  width: 30%;
+  height: 90px;
+  font-family: "ds-digit";
+  color: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: lighter;
+  /* border: 1px solid red; */
+}
+.row.bottom div:first-child,
+.row.bottom div:last-child {
+  background-image: url("../img/big-box.png");
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.row.bottom div:nth-child(2) {
+  display: block;
+  /* flex-direction: column; */
+}
+.row.bottom div:nth-child(2) span {
+  margin-top: 1.7em;
+  margin-bottom: 0.5em;
+  display: block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  font-family: "Fredoka", "sans-serif";
+  /* height: 50%; */
+}
+.row.bottom div.round {
+  background-image: url("../img/small-box.png");
+  background-position: center center;
+  background-size: 100% 100%;
+  width: 40%;
+  margin: 0.3em auto;
+  height: 40px !important;
+  font-size: 3rem;
+}
+.display {
+  width: 70%;
+  min-height: 4vh;
+  margin: 1em auto;
+  max-height: 200px;
+  background-image: url("../img/display.png");
+  background-position: center center;
+  background-size: 100% 100%;
+  font-family: "ds-digit";
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.results {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.results div {
+  width: 33%;
+  text-align: center;
+  box-shadow: 1px 35px 30px 8px rgba(0 ,0 ,0 ,0.8);
+  border-radius: 100%;
+}
+.results div img {
+  width: 100%;
+  height: auto;
+}
+.play {
+  position: relative;
+  width: 30%;
+  margin: 2em auto;
+  padding: .4em;
+  border: 1px solid white;
+  border-radius: 0.7rem;
+  display: flex;
+  justify-content: space-around;
+}
+.play div {
+  width: 30%;
+  padding: .4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.play div img {
+  width: 80%;
+  height: auto;
+}
+.play span {
+  display: inline-block;
+  position: absolute;
+  left: 38%;
+  top: -8px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-radius: .5rem;
+  background-color: var(--green);
+  font-weight: bold;
+}
