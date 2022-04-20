@@ -2,7 +2,7 @@
   font-family: "ds-digit";
   src: url("../fonts/DS-DIGI.TTF");
 }
-/* reset de los stylos por defecto del navegador */
+/*reset estilos navegador*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,7 +14,7 @@
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
-/* seudo selector del elemento html */
+/*pseudoselector elemento HTML*/
 :root {
   font-size: 0.785rem;
   font-family: "Rubik", sans-serif;
@@ -40,7 +40,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  /* padding: 4em 2em; */
   color: white;
   font-family: "Fredoka", sans-serif;
 }
@@ -50,7 +49,7 @@ body {
   margin: 5% auto;
 } */
 img.logo {
-  max-width: 200px;
+  max-width: 190px;
   height: auto;
   margin-top: 3em;
 }
@@ -95,7 +94,7 @@ img.logo {
   width: 30%;
   height: 90px;
   font-family: "ds-digit";
-  color: var(--red);
+  color: #FE0000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,7 +132,7 @@ img.logo {
   font-size: 3rem;
 }
 .display {
-  width: 70%;
+  width: 78%;
   min-height: 4vh;
   margin: 1em auto;
   max-height: 200px;
@@ -156,12 +155,26 @@ img.logo {
 .results div {
   width: 33%;
   text-align: center;
-  box-shadow: 1px 35px 30px 8px rgba(0 ,0 ,0 ,0.8);
-  border-radius: 100%;
+  /* box-shadow: 0px 20px 10px 10px rgba(0, 0, 0, 0.2); */
+  position: relative;
+}
+
+.results div div {
+  position: absolute;
+  width: 40%;
+  height: 40px;
+  border-radius: 50%;
+  bottom: -1px;
+  left: 30%;
+  transform: scale(1, 0.6);
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  box-shadow: 0px -5px 27px 45px rgba(0, 0, 0, 0.8);
 }
 .results div img {
+  position: relative;
   width: 100%;
   height: auto;
+  z-index: 100;
 }
 .play {
   position: relative;
